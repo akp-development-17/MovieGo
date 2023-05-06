@@ -1,0 +1,129 @@
+.show-list-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: #fff;
+}
+
+.show-list-title {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.search-input {
+  padding: 10px;
+  font-size: 24px;
+  width: 300px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-button {
+  padding: 10px 20px;
+  font-size: 24px;
+  background-color: #ffafbd;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #ff6b81;
+}
+
+.show-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.show-item {
+  margin: 10px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 0.5s ease;
+  transition: transform 0.3s ease;
+}
+
+.show-item:hover {
+  transform: translateY(-5px);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.show-link {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.show-details {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+p {
+  color: #000;
+}
+
+body {
+  background-color: #5a5959;
+  background-image: url('back.avif');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+  .show-list-container {
+    padding: 30px;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .show-list-container {
+    padding: 20px;
+  }
+
+  .search-input {
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .show-item {
+    width: 100%;
+  }
+}
